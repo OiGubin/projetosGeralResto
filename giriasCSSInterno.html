@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+    <title>Criando Gírias da rpzd</title>
+    <script src="logica.js"></script>
+    <style>
+        /* Estilizando o corpo da pagina*/
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif; /*definindo fonte*/
+    background-color: antiquewhite; /*cor de fundo*/
+    margin: 0; /* remove as margens */
+    padding: 0; /* remove o espaçamento interno*/
+    display: flex; /*utiliza os sistemas de layout reflexivel*/
+    justify-content: center; /*cntralizar o conteudo horizontalmente*/
+    align-items: center; /*centraliza o conteudo verticalmente*/
+    height: 100vh; /* define que a altura seja 100% de tela*/
+}
+/* estilo para Conteiner principal */
+.container{
+    text-align: center; /*centraliza o texto dentro do conteiner*/
+    background-color: #c35050; /* fundo do conteiner*/
+    padding: 20px; /* espaçamento interno do conteiner*/
+    border-radius: 10px; /*borda arredondada*/
+}
+
+/* Estilo para o ttulo da pagina */
+
+h1{
+    color: rgb(34, 49, 45);
+}
+
+/* estilo para o campo de entrada Input*/
+input{
+    padding: 10px; /* espaçamento interno no campo de texto*/
+    width: 60%; /* largura do campo em relação ao container */
+    border: 1px solid #ccc; /*borda cinza clara*/
+    border-radius: 5px; /* borda arrendondada*/
+    margin-bottom: 10px; /*espaçamento inferior*/
+}
+
+button{
+    padding: 10px; /* espaçamento interno do botão*/
+    background-color: rgb(255, 255, 255); /*cor de fundo*/
+    color: rgb(41, 46, 44); /* cor do texto*/
+    border: none; /*remove a borda padrão*/
+    border-radius: 12px; /*borda arredondada*/
+    cursor: pointer; /*muda o cursor para mãozinha ao passar no botão*/
+}
+
+/* efeito hover quando passar o mouse bre o botão*/
+button:hover{
+    background-color: rgb(238, 122, 122);
+} 
+#resultado{
+    margin-top: 20px; /* espaçamento superior */
+    font-size: 18px; /* tamanho da fonte para o texto*/
+    color: black; /*cor do texto cinza escuro*/
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Escreva sua gíria:</h1>
+        <!-- Campo de entrada de texto -->
+        <input type="text" id="giriasInput" placeholder="insira aqui sua giria parça">
+        <!-- Criando um botão que chama a função JavaScript ao ser clicado-->
+         <button onclick="adicionandoGiria()">Adicionar Gíria</button>
+         <!-- Criando uma área para aparecer os resultados-->
+          <div id="resultado"></div>
+
+    </div>
+    
+    
+    
+</body>
+</html>

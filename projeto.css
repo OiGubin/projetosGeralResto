@@ -1,0 +1,8 @@
+.container-centro{
+    text-align: center;
+    width: 550px;
+    height:660px;
+    border: 1px double rgb(24, 71, 99);
+    color: rgb(0, 117, 172);
+    border-radius: 15px; 
+}
